@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">SimplyGraph</string>
+    <string name="contentPie">TODO</string>
+    <string name="data_entry">Data Entry</string>
+    <string name="pie_data_entry_info">Enter the values and tags of the data set in the fields given below. For example, if the
+        pie chart is of GDP distribution, add country name in the \"Tag\" field and GDP value in the \"Value\" field.</string>
+    <string name="pie_tag">Tag:</string>
+    <string name="pie_values">Value: </string>
+    <string name="add_values">Add Value</string>
+    <string name="plot_graph">Plot Graph</string>
+    <string name="reset_graph">Reset Graph</string>
+    <string name="input_not_filled">Please fill all the values</string>
+    <string name="empty_graph">Please add values to the graph</string>
+    <string name="pie_chart_title">Pie Chart</string>
+    <string name="pie_label">Label</string>
+    <string name="linechart_data_entry_info">Enter the X-coordinates and Y-coordinates of the data set in the fields
+        given below. The X-coordinates data set can have any string input. For eg, \"January\", \"5\",\"2001\" etc.</string>
+    <string name="xcoordinate">X-Coordainate:</string>
+    <string name="ycoordinate">Y-Coordainate:</string>
+    <string name="dataset_entry">Data Set Entry</string>
+    <string name="dataset_entry_info">Note: After creating a data set suppose for Company A, if you wish to add data set
+    for Company B, click on \"Create New Dataset\" and add values for company B. After you have finished adding values, go back
+    and plot the graph</string>
+    <string name="line_chart_info">Line Chart</string>
+    <string name="data_empty">Unable to plot empty data</string>
+    <string name="bar_dataentry_info">Enter values for generating a bar chart over a range of data of Y values. The custom X-axis range feature
+    will be updated in a few days.</string>
+
+</resources>
