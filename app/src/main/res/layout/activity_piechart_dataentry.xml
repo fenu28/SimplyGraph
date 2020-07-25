@@ -2,13 +2,13 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background = "#FFFFFF">
+    android:background = "@color/colorPrimary">
     <ImageView
         android:id="@+id/imageview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/piechartimage"
-        android:scaleType="center"
+        android:scaleType = "center"
         android:contentDescription="@string/contentPie">
     </ImageView>
     <TextView
@@ -19,7 +19,7 @@
         android:text = "@string/data_entry"
         android:fontFamily = "sans-serif-medium"
         android:textSize="36sp"
-        android:textColor="@android:color/black"
+        android:textColor="#ffffff"
         android:layout_margin="8dp">
     </TextView>
     <TextView
@@ -30,7 +30,7 @@
         android:layout_below="@id/data_entry_textview"
         android:textSize="18sp"
         android:fontFamily="sans-serif-medium"
-        android:textColor="@android:color/black"
+        android:textColor="#ffffff"
         android:layout_margin="8dp">
     </TextView>
     <TextView
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:text="@string/pie_tag"
         android:textSize="24sp"
-        android:textColor="@android:color/black"
+        android:textColor="#ffffff"
         android:fontFamily="sans-serif-medium"
         android:layout_below="@id/data_entry_info"
         android:layout_margin="8dp">
@@ -52,7 +52,7 @@
         android:layout_toEndOf="@id/pie_tag"
         android:layout_marginEnd="24dp"
         android:textSize="18sp"
-        android:textColor="@android:color/black"
+        android:textColor="#ffffff"
         android:fontFamily="sans-serif-medium"
         android:inputType="text">
     </EditText>
@@ -61,7 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text = "@string/pie_values"
-        android:textColor="@android:color/black"
+        android:textColor="#ffffff"
         android:textSize="24sp"
         android:fontFamily="sans-serif-medium"
         android:layout_below="@id/pie_tag"
@@ -75,7 +75,7 @@
         android:layout_toEndOf="@id/pie_value"
         android:layout_marginEnd="24dp"
         android:textSize="18sp"
-        android:textColor="@android:color/black"
+        android:textColor="#ffffff"
         android:fontFamily="sans-serif-medium"
         android:inputType="numberDecimal">
     </EditText>
@@ -88,37 +88,37 @@
         android:id="@+id/add_values"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/colorPrimary"
+        android:backgroundTint="@color/colorAccent"
         android:fontFamily="sans-serif-medium"
         android:text="@string/add_values"
-        android:textColor="#ffffff"
+        android:textColor="#000000"
         android:textSize="18sp"
         android:layout_gravity="center"
-        android:layout_marginTop="8dp">
+        android:layout_marginTop="24dp">
     </Button>
     <Button
         android:id="@+id/plot_graph"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/colorPrimary"
+        android:backgroundTint="@color/colorAccent"
         android:fontFamily="sans-serif-medium"
         android:text="@string/plot_graph"
-        android:textColor="#ffffff"
+        android:textColor="#000000"
         android:textSize="18sp"
         android:layout_gravity="center"
-        android:layout_marginTop="8dp">
+        android:layout_marginTop="24dp">
     </Button>
     <Button
         android:id="@+id/reset_graph"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:backgroundTint="@color/colorPrimary"
+        android:backgroundTint="@color/colorAccent"
         android:fontFamily="sans-serif-medium"
         android:text="@string/reset_graph"
-        android:textColor="#ffffff"
+        android:textColor="#000000"
         android:textSize="18sp"
-        android:layout_marginTop="8dp">
+        android:layout_marginTop="24dp">
     </Button>
     </LinearLayout>
 </RelativeLayout>

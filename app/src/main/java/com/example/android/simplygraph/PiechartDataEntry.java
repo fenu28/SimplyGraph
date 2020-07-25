@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.mikephil.charting.data.PieEntry;
@@ -16,11 +17,16 @@ import java.util.ArrayList;
 
 public class PiechartDataEntry extends AppCompatActivity {
     static ArrayList<PieEntry> yvalues = new ArrayList<>();
+    ActionBar actionBar;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         setTitle(R.string.pie_chart_title);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_piechart_dataentry);
+        actionBar = getSupportActionBar();
+        assert actionBar != null;
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
         final EditText tagEntry = (EditText)(findViewById(R.id.tag_entry));
         final EditText valueEntry = (EditText)(findViewById(R.id.value_entry));
         Button addValue = findViewById(R.id.add_values);
@@ -61,5 +67,11 @@ public class PiechartDataEntry extends AppCompatActivity {
     public ArrayList<PieEntry> getPieEntry()
     {
         return yvalues;
+    }
+
+    @Override
+    public boolean onSupportNavigateUp(){
+        finish();
+        return true;
     }
 }

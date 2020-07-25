@@ -2,6 +2,7 @@ package com.example.android.simplygraph;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.mikephil.charting.charts.BarChart;
@@ -16,10 +17,15 @@ import java.util.ArrayList;
 
 public class Multibarchart extends AppCompatActivity {
     BarChart barChart;
+    ActionBar actionBar;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+        this.setTitle("Multibar Chart");
         super.onCreate(savedInstanceState);
+        actionBar = getSupportActionBar();
+        assert actionBar != null;
+        actionBar.setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.activity_multibar_chart);
         barChart = findViewById(R.id.multibar_chart);
         barChart.setDrawBarShadow(false);
@@ -41,5 +47,11 @@ public class Multibarchart extends AppCompatActivity {
         xAxis.setValueFormatter(new MyXAxisValueFormatter(xString));
         xAxis.setGranularity(1);
         barChart.setData(data);
+    }
+    @Override
+    public boolean onSupportNavigateUp()
+    {
+        finish();
+        return true;
     }
 }

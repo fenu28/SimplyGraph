@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.mikephil.charting.charts.LineChart;
@@ -23,8 +24,13 @@ import java.util.ArrayList;
 
 public class Linechart extends AppCompatActivity {
     LineChart lChart;
+    ActionBar actionBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        this.setTitle("Line Chart");
+        actionBar = getSupportActionBar();
+        assert actionBar != null;
+        actionBar.setDisplayHomeAsUpEnabled(true);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_line_chart);
         lChart = findViewById(R.id.line_chart);
@@ -51,5 +57,11 @@ public class Linechart extends AppCompatActivity {
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
         xAxis.setGranularity(1);
         lChart.setData(lineData);
+    }
+    @Override
+    public boolean onSupportNavigateUp()
+    {
+        finish();
+        return true;
     }
 }

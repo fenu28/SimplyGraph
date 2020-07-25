@@ -13,8 +13,8 @@
     <string name="empty_graph">Please add values to the graph</string>
     <string name="pie_chart_title">Pie Chart</string>
     <string name="pie_label">Label</string>
-    <string name="linechart_data_entry_info">Enter the X-coordinates and Y-coordinates of the data set in the fields
-        given below. The X-coordinates data set can have any string input. For eg, \"January\", \"5\",\"2001\" etc.</string>
+    <string name="linechart_data_entry_info">Enter the Y-values of the line chart data set in the Y-coordinate field
+        The custom X-axis feature will be available afterwards.</string>
     <string name="xcoordinate">X-Coordainate:</string>
     <string name="ycoordinate">Y-Coordainate:</string>
     <string name="dataset_entry">Data Set Entry</string>
@@ -25,5 +25,18 @@
     <string name="data_empty">Unable to plot empty data</string>
     <string name="bar_dataentry_info">Enter values for generating a bar chart over a range of data of Y values. The custom X-axis range feature
     will be updated in a few days.</string>
-
+    <string name = "sinx">sinx</string>
+    <string name = "cosx">cosx</string>
+    <string name = "logx">logx</string>
+    <string name = "tanx">tanx</string>
+    <string name = "secx">secx</string>
+    <string name = "cotx">cotx</string>
+    <string name = "cosecx">cosecx</string>
+    <string name = "sinxcosx">sinx.cosx</string>
+    <string name = "xlogx">xlogx</string>
+    <string name = "xsinx">xsinx</string>
+    <string name = "xcosx">xcosx</string>
+    <string name = "xsecx">xsecx</string>
+    <string name="xtanx">xtanx</string>
+    <string name="sinxx">sinx/x</string>
 </resources>

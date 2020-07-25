@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.mikephil.charting.animation.Easing;
@@ -18,10 +19,14 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 import java.util.ArrayList;
 
 public class Piechart extends AppCompatActivity {
+    ActionBar actionBar;
     PieChart pieChart;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         setTitle(R.string.pie_chart_title);
+        actionBar = getSupportActionBar();
+        assert actionBar != null;
+        actionBar.setDisplayHomeAsUpEnabled(true);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pie_chart);
         pieChart = (PieChart) findViewById(R.id.piechart);
@@ -55,4 +60,11 @@ public class Piechart extends AppCompatActivity {
 
         pieChart.setData(data);
     }
+
+    @Override
+    public boolean onSupportNavigateUp(){
+        finish();
+        return true;
+    }
 }
+

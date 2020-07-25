@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <com.softmoore.android.graphlib.GraphView
+        android:layout_height="640dp"
+        android:layout_width="match_parent"
+        android:id="@+id/graphview">
+    </com.softmoore.android.graphlib.GraphView>
+    <TextView
+        android:id="@+id/graph_label"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="24sp"
+        android:layout_below="@id/graphview"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#ffffff"
+        android:gravity="center">
+    </TextView>
+</RelativeLayout>

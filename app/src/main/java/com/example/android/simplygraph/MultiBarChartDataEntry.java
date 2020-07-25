@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.mikephil.charting.data.BarEntry;
@@ -21,11 +22,16 @@ public class MultiBarChartDataEntry extends AppCompatActivity implements View.On
     private Button plot_graph;
     private Button reset_graph;
     private long i = 0;
+    ActionBar actionBar;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multibarchart_dataentry);
+        actionBar = getSupportActionBar();
+        assert actionBar != null;
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        this.setTitle("Multibar Chart");
          yInput  = (EditText)findViewById(R.id.barchart_y_input);
          add_value = (Button)findViewById(R.id.bar_add_values);
          plot_graph = (Button)findViewById(R.id.bar_plot_graph);
@@ -77,5 +83,12 @@ public class MultiBarChartDataEntry extends AppCompatActivity implements View.On
     public ArrayList<BarEntry> getBarEntries()
     {
         return barEntries;
+    }
+
+    @Override
+    public boolean onSupportNavigateUp()
+    {
+        finish();
+        return true;
     }
 }
