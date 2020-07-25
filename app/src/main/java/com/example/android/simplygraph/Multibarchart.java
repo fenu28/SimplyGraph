@@ -47,6 +47,7 @@ public class Multibarchart extends AppCompatActivity {
         xAxis.setValueFormatter(new MyXAxisValueFormatter(xString));
         xAxis.setGranularity(1);
         barChart.setData(data);
+        barChart.saveToGallery("BarChart",50);
     }
     @Override
     public boolean onSupportNavigateUp()

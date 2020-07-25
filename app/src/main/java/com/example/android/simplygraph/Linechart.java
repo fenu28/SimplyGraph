@@ -2,6 +2,8 @@ package com.example.android.simplygraph;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Environment;
+import android.os.Handler;
 import android.util.Log;
 
 import androidx.annotation.Nullable;
@@ -57,6 +59,15 @@ public class Linechart extends AppCompatActivity {
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
         xAxis.setGranularity(1);
         lChart.setData(lineData);
+
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                lChart.saveToGallery("LineChart", 50);
+            }
+        },3000);
+
     }
     @Override
     public boolean onSupportNavigateUp()
