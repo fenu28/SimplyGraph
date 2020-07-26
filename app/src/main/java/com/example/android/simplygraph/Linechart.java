@@ -60,13 +60,6 @@ public class Linechart extends AppCompatActivity {
         xAxis.setGranularity(1);
         lChart.setData(lineData);
 
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                lChart.saveToGallery("LineChart", 50);
-            }
-        },3000);
 
     }
     @Override

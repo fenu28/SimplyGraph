@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/linechart_example"
         android:text="@string/line_chart_info"
-        android:textSize="36sp"
+        android:textSize="32sp"
         android:fontFamily="sans-serif-medium"
         android:textColor="#ffffff"
         android:layout_margin="8dp">
@@ -27,10 +27,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/line_chart_info"
         android:text="@string/linechart_data_entry_info"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:fontFamily="sans-serif-medium"
         android:textColor="#ffffff"
-        android:layout_marginLeft="8dp">
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp">
     </TextView>
     <LinearLayout
         android:id="@+id/ll1"
@@ -45,8 +46,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@id/ll1"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="24dp">
+        android:layout_marginTop="16dp">
         <TextView
             android:id="@+id/ycoordinate"
             android:layout_width="wrap_content"
@@ -55,17 +55,17 @@
             android:textSize="24sp"
             android:fontFamily="sans-serif-medium"
             android:textColor="#ffffff"
-            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
             android:gravity="center">
         </TextView>
         <EditText
             android:id="@+id/input_ycoordinate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:fontFamily="sans-serif-medium"
             android:textColor="#ffffff"
-            android:layout_marginEnd="24dp"
+            android:layout_marginEnd="8dp"
             android:inputType="numberDecimal">
         </EditText>
     </LinearLayout>
@@ -82,9 +82,9 @@
             android:fontFamily="sans-serif-medium"
             android:text="@string/add_values"
             android:textColor="#000000"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:layout_gravity="center"
-            android:layout_marginTop="24dp">
+            android:layout_margin = "16dp">
         </Button>
         <Button
             android:id="@+id/plot_graph_line"
@@ -94,9 +94,11 @@
             android:fontFamily="sans-serif-medium"
             android:text="@string/plot_graph"
             android:textColor="#000000"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:layout_gravity="center"
-            android:layout_marginTop="24dp">
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp">
         </Button>
         <Button
             android:id="@+id/reset_graph_line"
@@ -107,8 +109,10 @@
             android:fontFamily="sans-serif-medium"
             android:text="@string/reset_graph"
             android:textColor="#000000"
-            android:textSize="18sp"
-            android:layout_marginTop="24dp">
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
         </Button>
     </LinearLayout>
 </RelativeLayout>

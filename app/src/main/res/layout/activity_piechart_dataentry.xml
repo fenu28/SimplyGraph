@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/piechartimage"
-        android:scaleType = "center"
+        android:scaleType = "fitCenter"
         android:contentDescription="@string/contentPie">
     </ImageView>
     <TextView
@@ -18,9 +18,11 @@
         android:layout_below="@id/imageview"
         android:text = "@string/data_entry"
         android:fontFamily = "sans-serif-medium"
-        android:textSize="36sp"
+        android:textSize="32sp"
         android:textColor="#ffffff"
-        android:layout_margin="8dp">
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp">
     </TextView>
     <TextView
         android:id="@+id/data_entry_info"
@@ -28,7 +30,7 @@
         android:layout_height="wrap_content"
         android:text = "@string/pie_data_entry_info"
         android:layout_below="@id/data_entry_textview"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:fontFamily="sans-serif-medium"
         android:textColor="#ffffff"
         android:layout_margin="8dp">
@@ -42,7 +44,9 @@
         android:textColor="#ffffff"
         android:fontFamily="sans-serif-medium"
         android:layout_below="@id/data_entry_info"
-        android:layout_margin="8dp">
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp">
     </TextView>
     <EditText
         android:id="@+id/tag_entry"
@@ -51,7 +55,7 @@
         android:layout_below="@id/data_entry_info"
         android:layout_toEndOf="@id/pie_tag"
         android:layout_marginEnd="24dp"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:textColor="#ffffff"
         android:fontFamily="sans-serif-medium"
         android:inputType="text">
@@ -65,7 +69,9 @@
         android:textSize="24sp"
         android:fontFamily="sans-serif-medium"
         android:layout_below="@id/pie_tag"
-        android:layout_margin="8dp">
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp">
     </TextView>
     <EditText
         android:id="@+id/value_entry"
@@ -74,7 +80,7 @@
         android:layout_below="@id/pie_tag"
         android:layout_toEndOf="@id/pie_value"
         android:layout_marginEnd="24dp"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:textColor="#ffffff"
         android:fontFamily="sans-serif-medium"
         android:inputType="numberDecimal">
@@ -92,9 +98,9 @@
         android:fontFamily="sans-serif-medium"
         android:text="@string/add_values"
         android:textColor="#000000"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:layout_gravity="center"
-        android:layout_marginTop="24dp">
+        android:layout_marginTop="16dp">
     </Button>
     <Button
         android:id="@+id/plot_graph"
@@ -104,9 +110,9 @@
         android:fontFamily="sans-serif-medium"
         android:text="@string/plot_graph"
         android:textColor="#000000"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:layout_gravity="center"
-        android:layout_marginTop="24dp">
+        android:layout_marginTop="16dp">
     </Button>
     <Button
         android:id="@+id/reset_graph"
@@ -117,8 +123,8 @@
         android:fontFamily="sans-serif-medium"
         android:text="@string/reset_graph"
         android:textColor="#000000"
-        android:textSize="18sp"
-        android:layout_marginTop="24dp">
+        android:textSize="16sp"
+        android:layout_marginTop="16dp">
     </Button>
     </LinearLayout>
 </RelativeLayout>

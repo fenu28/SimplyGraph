@@ -59,7 +59,6 @@ public class Piechart extends AppCompatActivity {
         data.setValueTextColor(Color.BLACK);
 
         pieChart.setData(data);
-        pieChart.saveToGallery("Pie Chart",50);
     }
 
     @Override
